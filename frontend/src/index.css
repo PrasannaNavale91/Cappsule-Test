@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.search-screen {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.search-screen h1{
+  margin: 3rem 0;
+}
+
+.search-form {
+  width: 70%;
+  max-height: 200px;
+  border-radius: 40px;
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  box-shadow: 1px 1px 10px 6px #F2F4F4;
+}
+
+.search-form input{
+  display: flex;
+  flex: 2;
+  flex-direction: row;
+  border: none;
+}
+
+.search-form input::placeholder{
+  font-size: 16px;
+  color: #D5DBDB;
+}
+
+.search-form input::selection , .search-form input:focus{
+  border: none;
+  outline: none;
+}
+
+.search-form button{
+  border: none;
+  background: transparent;
+  font-weight: 700;
+  color: #1A5276;
+  font-size: 16px;
+}
+
+.search-screen .text-card{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: lightgray;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.medicine-result {
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 70%;
+  box-shadow: 1px 1px 10px 6px #F2F4F4;
+  background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(174,214,241,0.2));
+  min-height: 250px;
+  display: flex;
+  flex-direction: row;
+}
+
+.filter-column , .salt-column , .price-column {
+  display: flex;
+  flex-direction: column;
+}
